@@ -15,8 +15,7 @@ class String
   end
 
   def count_sentences
-    self.split(/.) do |element|
-      element.count
-    end
+    self.split(/\.|\?|!/).length
+    self
   end
 end
